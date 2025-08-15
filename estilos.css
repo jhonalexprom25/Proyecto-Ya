@@ -1,0 +1,217 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body {
+	font-family:'Roboto',sans-serif;
+}
+
+header {
+	background: rgb(240,240,240);
+}
+
+.contenedor {
+	width:90%;
+	margin:auto;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+
+.logo { 
+	color: blueviolet;
+	font-size:2.5em;
+	font-weight:bold;
+}
+
+.logo,nav{
+	padding: 10px;
+}
+
+nav a {
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	padding: 5px 10px;
+}
+
+nav a:hover{
+	color:white;
+	background:blueviolet;
+}
+
+#aprende {
+	background-image: url("imagenes/hero.jpg");
+	background-size: cover;
+	background-position: center center;
+	height:60vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+#aprende h1 {
+	color:white;
+	font-size: 2em;
+	margin-bottom: 3%;
+}
+
+Button {
+	background:rgb(138,63,226); 
+		color:white;
+	border-radius:10px;
+	padding:10px;
+	font-size: 1.2em;
+	font-weight:bold;
+}
+Button:hover{
+	background: rgb(113,21,200);
+}
+span {
+	color:blueviolet;
+	font-size: 1.2em;
+}
+#programa_ya {
+	text-align:center;
+}
+
+#programa_ya h1 {
+	padding:30px;
+}
+
+#programa_ya p {
+	padding-bottom: 30px;
+}
+
+#nuestros_programas {
+	background: linear-gradient(black, blueviolet); 
+	
+}
+
+
+#nuestros_programas .programas {
+	display: flex;
+	flex-direction:row;
+	text-align:center;
+	color: white;
+	padding-bottom: 5%;
+}
+
+#nuestros_programas .titulos_violeta {
+	text-align:center;
+	color:blueviolet;
+	padding:5%;
+}
+
+#nuestros_programas Button {
+	margin:15%;
+}
+
+#nuestros_programas span{
+	color:white;
+	text-shadow:
+	0 0 10px cyan,
+	0 0 20px cyan,
+	0 0 40px cyan;
+}
+
+#nuestros_programas h1 {
+	margin: 20px 0;
+}
+
+#nuestros_programas p {
+	margin: 0 8px;
+}
+#cartauno {
+	background-image:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0)),url("imagenes/cartauno.jpg");
+	background-size: cover;
+	margin: 0 2%;
+	border-radius: 10px;
+}
+
+
+#cartados {
+	background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0)),url("imagenes/cartados.jpg");
+	background-size: cover;
+    background-position: center center;
+	margin: 0 2%;
+	border-radius: 10px;
+}
+
+
+#cartatres {
+	background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0)), url("imagenes/cartatres.jpg");
+	background-size: cover;
+    background-position: center center;
+	margin: 0 2%;
+	border-radius: 10px;
+}
+
+#caracteristicas .contenedor{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 50vh;
+}
+	
+#caracteristicas ul {
+	font-weight: bold;
+	text-align: center;
+	list-style:none;
+}
+#caracteristicas li {
+	margin:10px;
+}
+
+#aplica {
+	background: linear-gradient(black, blueviolet); 
+    background-position: center center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	text-align:center;
+}
+#aplica h1 {
+	color:white;
+	font-size: 2.5em;
+	margin-bottom: 3%;
+}
+
+footer .contenedor{
+	color: gray;
+	height: 100px;	
+	display:flex;
+	justify-content:center;
+	align-items:flex-end;
+}
+
+
+@media (max-width:720px) {
+	header .contenedor {
+	flex-direction:column;
+	}
+	
+	header nav {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		text-align:center;
+}
+
+#nuestros_programas .programas {
+	flex-direction: column;
+}
+
+#cartauno,#cartados,#cartatres {
+	margin: 30px;
+}
+
